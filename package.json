@@ -1,0 +1,26 @@
+{
+  "name": "service-desk",
+  "version": "1.0.0",
+  "description": "CHALLENGE ANDAMAS – SISTEMA DE SERVICE DESK em NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioFranco/node-service-desk.git"
+  },
+  "author": "Caio Franco de Freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioFranco/node-service-desk/issues"
+  },
+  "homepage": "https://github.com/CaioFranco/node-service-desk#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-load": "^1.1.16",
+    "mysql": "^2.15.0"
+  }
+}

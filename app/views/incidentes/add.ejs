@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Registrar Incidente</title>
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/layout-colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/main-style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/main.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<nav class="categories-nav">
+		<ul class="container">
+			<li class="category"><a href="">CHALLENGE ANDAMAS - SISTEMA DE SERVICE DESK</a></li>
+		</ul>
+	</nav>
+	<header id="product-highlight" class="clearfix">
+			<div id="product-overview" class="container">
+				<h1 class="product-title">Registrar Incidente</h1>
+			</div>
+	</header>
+	<div class="container">
+		<form action="/incidentes" method="post">
+	   	    <div class="container">
+		        <label>Cliente</label>
+		        <select name="cliente" id="cliente">
+					<% clientes.forEach(function(cliente){ %>
+						<option value="<%= cliente.id %>"><%= cliente.nome %></option>
+					<% }) %>
+			  	</select>
+		    </div>
+		    <br>
+	   	    <div class="container">
+		        <label>Atendente</label>
+		        <select name="atendente" id="atendente">
+					<% atendentes.forEach(function(atendente){ %>
+						<option value="<%= atendente.id %>"><%= atendente.nome %></option>
+					<% }) %>
+			  	</select>
+		    </div>
+		    <br>
+		    <div class="container">
+		        <label>Descrição</label>
+		        <textarea rows="5" cols="25" id="descricao" name="descricao" placeholder="Descrição do Incidente"></textarea>
+		    </div>
+			<br>
+			<div class="container">
+				<input type="hidden" id="status" name="status" value="aberto"/>
+		    </div>
+			<br>
+			<div class="container">
+				<label>Data</label>
+				<input type="date" id="creation_time" name="creation_time" required/>
+		    </div>
+		    <br>
+		    <button type="submit">Registrar</button>
+		</form>
+		<br>
+		<br>
+		<a href="/">Voltar para Home</a>
+		<a href="/incidentes">Listar Incidentes</a>
+	</div>
+</body>
+</html>

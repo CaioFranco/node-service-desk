@@ -1,0 +1,9 @@
+#product-highlight {
+  color: #2F70AA;
+}
+
+.product-title {
+  text-shadow: -1px -1px #21527F,
+               1px 1px rgb(255,255,255);
+}
+

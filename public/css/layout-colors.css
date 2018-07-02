@@ -1,0 +1,88 @@
+html {
+  color: #333333;
+}
+
+#layout-header {
+  background: #000;
+}
+
+.categories-nav {
+  background-color: #584534;
+}
+.category > a {
+    color: #FFF;
+}
+
+.category > a:hover {
+    background-color: rgba(255,255,255,0.15); /*LEVE CLAREAMENTO*/
+    border-radius: 5px;
+}
+
+#home-highlight-collection li a h2 {
+  color: #EF7000;
+}
+#home-highlight-collection li a:hover h2 {
+  color: #EF7502;
+}
+
+#home-highlight-collection li a small {
+  color: #FFF;
+  background-color: #FB7B00;
+}
+#home-highlight-collection li a:hover small {
+  background-color: #EF7502;
+}
+
+#collection-title {
+  background-color: rgba(0,0,0,0.5); /*DROP SHADOW*/
+  color: #F58220;
+}
+
+#collection li {
+  border-bottom: 1px dotted #CCC;
+}
+
+.section-title {
+  border-bottom: 1px dotted #EF7000;
+  color: #EF7000;
+}
+
+#collection li a small {
+  background: rgb(245,245,245);
+}
+
+#collection li a h3 {
+  color: rgb(239,112,0);
+}
+
+#collection li a:link,
+#collection li a:visited {
+  color: rgb(51,51,51);
+}
+
+#collection li a:hover,
+#collection li a:active {
+  background: rgb(245,245,245);
+}
+
+#collection li a:hover small,
+#collection li a:active small {
+  background: rgb(239,112,0);
+  color: rgb(255,255,255);
+}
+
+#collection li a:hover p,
+#collection li a:active p {
+  color: rgb(102,102,102);
+}
+
+@media only screen and (max-width: 768px) {
+  #main-nav ul li {
+    background: #000; /*ORIGINAL #000000*/
+  }
+
+  #main-nav ul li a:link,
+  #main-nav ul li a:visited {
+    /*color: #FFFFFF; /*CRIADO  */
+  }
+}

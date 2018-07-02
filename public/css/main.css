@@ -1,0 +1,98 @@
+.product-title {
+  font: bold 50px "Museo", Sans-serif;
+  margin: 0;
+}
+
+#variants {
+  float: left;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.variant-label {
+  font-weight: bold;
+  font-size:130%;
+}
+
+.summary-call {
+  clear: left;
+  padding-top: 20px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.summary {
+  -moz-column-count: 2;
+  -moz-column-gap: 1.5em;
+  -moz-column-rule: none;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1.5em;
+  -webkit-column-rule: none;
+  column-count: 2;
+  column-gap: 1.5em;
+  column-rule: none;
+  clear: both;
+  width: 80%;
+  float: left;
+  margin: 10px auto;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.summary ul{
+  margin-top: 0;
+}
+
+.summary h3{
+  margin: 0;
+  font-size: 100%
+}
+
+.summary ul li {
+  list-style: circle;
+  font-size:136%;
+}
+
+.summary div{
+	width:95%;
+	float:left;
+}
+
+.summary div:not(:last-child){
+    margin-right:40px;
+}
+
+.data {
+	margin-bottom:20px;
+}
+
+@media only screen and (max-width: 1024px){
+    .summary{
+        width: 100%;
+    }
+
+    .product-detail p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 642px){
+
+    #product-overview{
+        text-align: center;
+    }
+
+    .summary{
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 450px){
+  .product-title{
+    font: bold 35px "Museo", Sans-serif;
+  }
+}

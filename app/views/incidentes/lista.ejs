@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Incidentes Registrados</title>
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/layout-colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/main-style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/main.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<nav class="categories-nav">
+		<ul class="container">
+			<li class="category"><a href="">CHALLENGE ANDAMAS - SISTEMA DE SERVICE DESK</a></li>
+		</ul>
+	</nav>
+	<header id="product-highlight" class="clearfix">
+			<div id="product-overview" class="container">
+				<h1 class="product-title">Incidentes Registrados</h1>
+			</div>
+	</header>
+	<div class="container">
+		<table width="100%">
+		    <tr>
+		        <td><h3>ID</h3></td>
+		        <td><h3>Cliente</h3></td>
+		        <td><h3>Atendente</h3></td>
+		        <td><h3>Descrição</h3></td>
+		        <td><h3>Status</h3></td>
+		        <td><h3>Data</h3></td>
+			</tr>
+			<% for(var i=0; i<lista.length; i++) {%>
+		        <tr>
+		            <td><%= lista[i].id %></td>
+		            <td><%= lista[i].cliente %></td>
+		            <td><%= lista[i].atendente %></td>
+		            <td><%= lista[i].descricao %></td>
+		            <td><%= lista[i].status %></td>
+		            <td><%= lista[i].creation_time %></td>
+		            <td><a href="incidentes/encerrar/<%= lista[i].id %>">Encerrar</a></td>
+		        </tr>
+			<% } %>
+		</table>
+		<br>
+		<br>
+		<a href="/">Voltar para Home</a>
+		<a href="/incidentes/add">Registrar Incidente</a>
+	</div>
+</body>
+</html>

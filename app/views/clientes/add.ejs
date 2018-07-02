@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Cadastrar Cliente</title>
+	<link href="/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/layout-colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/main-style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="/css/main.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<nav class="categories-nav">
+		<ul class="container">
+			<li class="category"><a href="">CHALLENGE ANDAMAS - SISTEMA DE SERVICE DESK</a></li>
+		</ul>
+	</nav>
+	<header id="product-highlight" class="clearfix">
+			<div id="product-overview" class="container">
+				<h1 class="product-title">Cadastrar Cliente</h1>
+			</div>
+	</header>
+	<div class="container">
+		<form action="/clientes" method="post">
+		    <div class="container">
+		        <label>Cliente</label>
+		        <input type="text" id="nome" name="nome" placeholder="Nome do Cliente..." required/>
+		    </div>
+		    <br>
+		    <div class="container">
+		        <label>Empresa</label>
+		        <input type="text" id="empresa" name="empresa" placeholder="Nome da Empresa..." required/>
+		    </div>
+		    <br>
+		    <button type="submit">Cadastrar</button>
+		</form>
+		<br>
+		<br>
+		<a href="/">Voltar para Home</a>
+		<a href="/clientes">Listar Clientes</a>
+	</div>
+</body>
+</html>
